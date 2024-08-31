@@ -1,6 +1,6 @@
 ### **1 - Introduction**
 
-
+We were provided with a 2015 dataset from the Behavioral Risk Factor Surveillance System (BRFSS) that records various behaviors, conditions, and symptoms for U.S. individuals with or without diabetes. For this study, the dataset was cleaned and reduced to 70,692 responses, evenly split between those with diabetes and those with prediabetes or no diabetes. Our goal was to identify the most predictive risk factors for diabetes. Given the time constraints, we conducted a brief exploratory data analysis (EDA), categorized features using domain knowledge, performed a Chi-square test for initial selection, and refined our results with a Random Forest model.
 
 ### **2 - Table of Contents**
 
@@ -100,6 +100,16 @@ The analysis was conducted in the following steps:<br>
 
 ### **7 - Results**
 
+By combining domain knowledge with statistical and model-based feature selection, we identified four potential risk factors for diabetes.
+However, these results should be interpreted cautiously.
+First, no single feature stands out as a clearly distinguishable predictor, suggesting that diabetes risk is likely multifactorial. 
+The relationships and interactions between features may be more significant than the individual features themselves. Future analyses should explore feature combinations that could be more predictive of diabetes.
+Among the four remaining features, three fall into the "Physiological Conditions" category, highlighting the connection between individual health habits and diabetes diagnosis. However, each of these habits may be influenced or conditioned by other factors, raising questions about how socio-economic conditions affect physiological conditions and potentially lead to diabetes.
+Additionally, even though correlations were found between certain features and diabetes status, they do not necessarily indicate direct causation.
+
+Mitigating Results and Considering False Negatives
+After identifying potential risk factors, we analyzed a sample of the population that tested negative but had not seen a doctor in the past year due to cost and lacked healthcare coverage. We sought to determine if this group might be at risk or falsely negative for diabetes. We found that this population exhibited higher risk factor metrics compared to the negative group with healthcare access, though cholesterol levels were similar. Notably, heavy alcohol consumption was higher in the at-risk group, suggesting that alcohol might be a risk factor. Once positively diagnosed, individuals may consume less alcohol due to health concerns.
+
 
 ### **8 - Visualizations**
 
@@ -109,11 +119,14 @@ Plots viz located in:
 
 ### **9 - Conclusions**
 
+There are elements of our approach that could be refined. The sample population used in this study may not be optimal for such classification and selection, as it was limited to a single year (2015). The BRFSS study began in 1984, so there is more data available that could help us track individual behaviors and pathologies over time.
+Observing the evolution of individuals’ health might yield more fruitful results by allowing us to compare behaviors before and after diabetes diagnosis while comparing features of individuals who remain healthy. 
+Recognizing the multifactorial nature of diabetes, other factors such as environmental components (e.g., temperature affecting blood sugar and insulin levels), pollutants, or genetic contributions, which are already known to influence human physiology, should also be considered.
 
 
 ### **10 - Acknowledgement**
 
-
+XXX
 
 ### **11 - Contact**
 
