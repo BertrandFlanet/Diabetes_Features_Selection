@@ -24,16 +24,16 @@ Google Colab: Upload directly via the "File" menu or open from Google Drive<br>
 Jupyter Notebook: Install Jupyter, start it via terminal, and open the .ipynb file through the interface
 
 . python:<br>
-	- pandas<br>
-	- numpy<br>
-	- matplotlib<br>
-	- seaborn<br>
-	- sklearn.feature_selection --> SelectKBest, chi2<br>
-	- sklearn.preprocessing --> MinMaxScaler<br>
-	- sklearn.ensemble --> RandomForestClassifier<br>
-	- sklearn.feature_selection --> SelectFromModel<br>
-	- sklearn.model_selection --> train_test_split, GridSearchCV<br>
-	- sklearn.metrics --> accuracy_score, classification_report, confusion_matrix<br>
+	&emsp;- pandas<br>
+	&emsp;- numpy<br>
+	&emsp;- matplotlib<br>
+	&emsp;- seaborn<br>
+	&emsp;- sklearn.feature_selection --> SelectKBest, chi2<br>
+	&emsp;- sklearn.preprocessing --> MinMaxScaler<br>
+	&emsp;- sklearn.ensemble --> RandomForestClassifier<br>
+	&emsp;- sklearn.feature_selection --> SelectFromModel<br>
+	&emsp;- sklearn.model_selection --> train_test_split, GridSearchCV<br>
+	&emsp;- sklearn.metrics --> accuracy_score, classification_report, confusion_matrix<br>
 
 
 ### **4 - Project Structure**
@@ -65,28 +65,28 @@ Diabetes_Features_Selection/
 ```
 ### **5 - Data**
 The dataset `diabetes_BRFSS2015 - diabetes_binary_5050split_health_indicators_BRFSS2015.csv`
-	- Diabetes_binary<br>
-	- HighBP<br>
-	- HighChol<br>
-	- CholCheck<br>
-	- BMI<br>
-	- Smoker<br>
-	- Stroke<br>
-	- HeartDiseaseorAttack<br>
-	- PhysActivity<br>
-	- Fruits<br>
-	- Veggies<br>
-	- HvyAlcoholConsump<br>
-	- AnyHealthcare<br>
-	- NoDocbcCost<br>
-	- GenHlth<br>
-	- MentHlth<br>
-	- PhysHlth<br>
-	- DiffWalk<br>
-	- Sex<br>
-	- Age<br>
-	- Education<br>
-	- Income<br>
+	&emsp;- Diabetes_binary<br>
+	&emsp;- HighBP<br>
+	&emsp;- HighChol<br>
+	&emsp;- CholCheck<br>
+	&emsp;- BMI<br>
+	&emsp;- Smoker<br>
+	&emsp;- Stroke<br>
+	&emsp;- HeartDiseaseorAttack<br>
+	&emsp;- PhysActivity<br>
+	&emsp;- Fruits<br>
+	&emsp;- Veggies<br>
+	&emsp;- HvyAlcoholConsump<br>
+	&emsp;- AnyHealthcare<br>
+	&emsp;- NoDocbcCost<br>
+	&emsp;- GenHlth<br>
+	&emsp;- MentHlth<br>
+	&emsp;- PhysHlth<br>
+	&emsp;- DiffWalk<br>
+	&emsp;- Sex<br>
+	&emsp;- Age<br>
+	&emsp;- Education<br>
+	&emsp;- Income<br>
 
 
 ### **6 - Analysis**
@@ -114,7 +114,7 @@ After identifying potential risk factors, we analyzed a sample of the population
 ### **8 - Visualizations**
 
 Plots viz located in:
-`results/`
+&emsp;`results/`
 
 
 ### **9 - Conclusions**
