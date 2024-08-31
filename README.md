@@ -28,9 +28,12 @@ Jupyter Notebook: Install Jupyter, start it via terminal, and open the .ipynb fi
 	- numpy<br>
 	- matplotlib<br>
 	- seaborn<br>
-	- sqlalchemy<br>
-	- math<br>
-	- sklearn<br>
+	- sklearn.feature_selection --> SelectKBest, chi2<br>
+	- sklearn.preprocessing --> MinMaxScaler<br>
+	- sklearn.ensemble --> RandomForestClassifier<br>
+	- sklearn.feature_selection --> SelectFromModel<br>
+	- sklearn.model_selection --> train_test_split, GridSearchCV<br>
+	- sklearn.metrics --> accuracy_score, classification_report, confusion_matrix<br>
 
 
 ### **4 - Project Structure**
@@ -62,39 +65,37 @@ Diabetes_Features_Selection/
 ```
 ### **5 - Data**
 The dataset `diabetes_BRFSS2015 - diabetes_binary_5050split_health_indicators_BRFSS2015.csv`
-- Diabetes_binary<br>
-- HighBP<br>
-- HighChol<br>
-- CholCheck<br>
-- BMI<br>
-- Smoker<br>
-- Stroke<br>
-- HeartDiseaseorAttack<br>
-- PhysActivity<br>
-- Fruits<br>
-- Veggies<br>
-- HvyAlcoholConsump<br>
-- AnyHealthcare<br>
-- NoDocbcCost<br>
-- GenHlth<br>
-- MentHlth<br>
-- PhysHlth<br>
-- DiffWalk<br>
-- Sex<br>
-- Age<br>
-- Education<br>
-- Income<br>
+	- Diabetes_binary<br>
+	- HighBP<br>
+	- HighChol<br>
+	- CholCheck<br>
+	- BMI<br>
+	- Smoker<br>
+	- Stroke<br>
+	- HeartDiseaseorAttack<br>
+	- PhysActivity<br>
+	- Fruits<br>
+	- Veggies<br>
+	- HvyAlcoholConsump<br>
+	- AnyHealthcare<br>
+	- NoDocbcCost<br>
+	- GenHlth<br>
+	- MentHlth<br>
+	- PhysHlth<br>
+	- DiffWalk<br>
+	- Sex<br>
+	- Age<br>
+	- Education<br>
+	- Income<br>
 
 
 ### **6 - Analysis**
 
 The analysis was conducted in the following steps:<br>
-1. **Exploratory Data Analysis (EDA)**: Identified key patterns and trends in the data.<br>
-2. **Feature Engineering**: Created new features to facilitate definition of thresholds and metrics<br>
-3. **RFM**: Conducted a Recency, Frequency, Monetary segmenting<br>
-4. **Segmentation by branching**: Conducted a segmentation with a branching method<br>
-5. **Perks**: Attributed perks to each generated groups<br>
-3. **Extra: Clustering**: Applied K-Means clustering to segment customers into distinct groups.<br>
+1. **Exploratory Data Analysis (EDA)**: Univariate and Bivariate analysis (Pearson correlation), comparing negatively and positevely diagnosed group.<br>
+2. **Chi2 test features selection**: Performing statistical test for features selection<br>
+3. **Random Forest features selection**: Refining the results of our Chi2 with model-based features selection<br>
+4. **Addendum**: Conducting a quick investigation on a group possibly at risk with the help of our Random Forest results<br>
 
 
 ### **7 - Results**
